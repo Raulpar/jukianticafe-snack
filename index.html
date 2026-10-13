@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7257d8"><title>Juki Anticafé | Pedidos y ventas</title>
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero"><div class="brand"><div class="logo">☕</div><div><div class="eyebrow">Pedidos &amp; caja</div><h1>Juki Anticafé</h1><p class="sub">Clientes, productos y ventas · precios en bolivianos (Bs)</p></div></div><div class="pill">✨ ¡Todo bajo control!</div></header>
+  <div class="layout">
+    <section class="panel">
+      <h2>Registrar pedido</h2><p class="hint">Escribe el nombre del cliente y añade productos a su pedido.</p>
+      <form id="addForm"><div class="formgrid"><div><label class="fieldlabel" for="customerName">Nombre del cliente</label><input class="name-input" id="customerName" placeholder="Ej. Valeria" autocomplete="off" required></div><div><label class="fieldlabel" for="productSelect">Producto</label><select id="productSelect" required></select></div><div><label class="fieldlabel" for="qty">Cantidad</label><input id="qty" type="number" min="1" max="999" value="1" required></div></div><button class="btn primary full" type="submit">＋ Agregar al pedido</button></form>
+      <div class="divider"></div><h2>Pedidos de clientes</h2><p class="hint">El subtotal por cliente y el total general se calculan automáticamente.</p><div id="orders" class="orderlist"></div>
+    </section>
+    <aside class="side">
+      <div class="totalbox"><div class="caption">TOTAL DE TODAS LAS VENTAS</div><div class="grand" id="grandTotal">0 Bs</div><p>Acumulado de los pedidos registrados</p></div>
+      <section class="panel"><h2>Resumen de caja</h2><div class="statrow"><span>Clientes con pedidos</span><strong id="clientCount">0</strong></div><div class="statrow"><span>Unidades vendidas</span><strong id="unitCount">0</strong></div><div class="statrow"><span>Productos diferentes vendidos</span><strong id="productCount">0</strong></div><button id="copyBtn" class="btn soft full" type="button">Copiar resumen de ventas</button><button id="clearBtn" class="btn danger full" type="button">Borrar todos los pedidos</button>
+        <div class="divider"></div><h2>Agregar producto</h2><p class="hint">Añade productos nuevos con el precio que tú elijas.</p><form id="productForm"><div class="field"><label class="fieldlabel" for="newProductName">Nombre del producto</label><input id="newProductName" class="name-input" maxlength="60" placeholder="Ej. Jugo de naranja" required></div><div class="field gap-top"><label class="fieldlabel" for="newProductPrice">Precio por unidad (Bs)</label><input id="newProductPrice" type="number" min="0.01" max="100000" step="0.01" placeholder="Ej. 5" required></div><button class="btn primary full" type="submit">＋ Guardar producto y precio</button></form>
+        <div class="price-list"><details open><summary>📋 Catálogo de productos y precios</summary><div id="prices" class="prices"></div></details></div>
+      </section>
+    </aside>
+  </div>
+  <footer class="foot">Juki Anticafé · Los productos y pedidos se guardan en este navegador.</footer>
+</main>
+</body></html>

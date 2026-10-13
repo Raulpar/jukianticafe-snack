@@ -1,0 +1,20 @@
+JUKI ANTICAFÉ — PEDIDOS Y CONTROL DE VENTAS
+
+ARCHIVOS
+- index.html: estructura de la página.
+- styles.css: diseño y colores.
+- script.js: productos, pedidos, cálculos y guardado local.
+
+CÓMO USAR
+1. Mantén los tres archivos en la misma carpeta.
+2. Abre index.html con Chrome, Edge o Firefox.
+3. Para agregar un producto, completa “Nombre del producto” y “Precio por unidad (Bs)” y pulsa “Guardar producto y precio”.
+4. Para registrar una venta, escribe el nombre del cliente, selecciona el producto, elige la cantidad y pulsa “Agregar al pedido”.
+5. El total de todas las ventas se actualiza automáticamente en Bs.
+6. En el catálogo puedes pulsar “Editar” para cambiar el precio actual de un producto.
+7. Los precios de ventas ya registradas se conservan, incluso si luego editas el precio del producto.
+8. Los productos y pedidos se guardan automáticamente en el almacenamiento local del navegador de ese dispositivo.
+9. “Copiar resumen de ventas” prepara un resumen de pedidos y total para pegarlo donde necesites.
+
+IMPORTANTE
+Los datos se guardan solo en ese navegador y dispositivo. No borres los datos del navegador si quieres conservarlos. “Borrar todos los pedidos” elimina las ventas guardadas, pero no borra el catálogo de productos.
